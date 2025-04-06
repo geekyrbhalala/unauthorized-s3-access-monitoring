@@ -13,3 +13,9 @@ variable "cloudtrail_log_bucket_name" {
 variable "s3_monitoring_trail" {
   description = "Monitoring Trail for S3 bucket"
 }
+
+variable "alert_email" {
+  description = "Email address to receive S3 unauthorized access alerts"
+  type        = string
+}
+
